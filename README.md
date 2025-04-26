@@ -2,7 +2,6 @@
 Dataset:  Sen1Floods11 dataset 
 
 ## Input Data: Single-timestamp Sentinel-2 images in GeoTIFF format, utilizing six spectral bands:
-
 1. Blue
 2. Green
 3. Red
@@ -18,3 +17,7 @@ Dataset:  Sen1Floods11 dataset
 
 
 Architecture: Based on a Vision Transformer (ViT) with a Masked Autoencoder (MAE) framework, the model was initially pre-trained on Harmonized Landsat and Sentinel-2 (HLS) data, then fine-tuned for flood mapping tasks. 
+
+Note: 
+Chip = a small cut-out or patch from a much larger satellite image.
+512×512 = the chip has 512 pixels width × 512 pixels height. 
