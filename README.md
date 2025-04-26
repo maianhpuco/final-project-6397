@@ -21,3 +21,6 @@ Architecture: Based on a Vision Transformer (ViT) with a Masked Autoencoder (MAE
 Note: 
 Chip = a small cut-out or patch from a much larger satellite image.
 512×512 = the chip has 512 pixels width × 512 pixels height. 
+
+
+reference link: https://github.com/NASA-IMPACT/hls-foundation-os 
