@@ -24,3 +24,32 @@ Chip = a small cut-out or patch from a much larger satellite image.
 
 
 reference link: https://github.com/NASA-IMPACT/hls-foundation-os 
+
+```
+conda activate hls_fresh
+
+pip install torch==1.11.0+cu115 torchvision==0.12.0+cu115 --extra-index-url https://download.pytorch.org/whl/cu115
+
+pip install -e .
+
+pip install -U openmim
+
+mim install mmcv-full==1.6.2 -f https://download.openmmlab.com/mmcv/dist/cu115/torch1.11.0/index.html 
+
+```
+pip install torch==1.11.0+cu115 torchvision==0.12.0+cu115 --extra-index-url https://download.pytorch.org/whl/cu115 
+
+Sanity Check: 
+```
+python -c "import mmcv; print(mmcv.__version__)" 
+```
+pip install rasterio==1.3.10 
+mim install mmcv-full==1.6.2 -f https://download.openmmlab.com/mmcv/dist/cu115/torch1.11.0/index.html  
+```
+mim install mmsegmentation 
+
+pip install "numpy>=1.19.2,<1.24.0" #TypeError related to np.ndarray 
+```
+
+pip install -e . --config-settings editable_mode=compat 
+
